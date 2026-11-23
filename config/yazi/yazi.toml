@@ -1,0 +1,9 @@
+[opener]
+image = [
+  { run = "swayimg \"$@\"", orphan = true, desc = "swayimg" },
+]
+
+[open]
+prepend_rules = [
+  { mime = "image/*", use = "image" },
+]
