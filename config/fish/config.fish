@@ -5,8 +5,8 @@ alias ls='eza --icons'   # Jika sudah instal eza (pengganti ls yang berwarna)
 alias fetch='fastfetch'   # Cek spek sistem ala Caelestia
 alias conf='cd ~/.config' # Cepat masuk ke folder config
 
-if type -q caelestia
-    caelestia shell --init-fish | source
+if test -f ~/.local/state/caelestia/sequences.txt
+    cat ~/.local/state/caelestia/sequences.txt
 end
 
 
