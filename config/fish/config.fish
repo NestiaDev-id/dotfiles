@@ -13,3 +13,9 @@ end
 # Added by Antigravity CLI installer
 set -gx PATH "/home/nestia_dev/.local/bin" $PATH
 source ~/.config/fish/config-linux.fish
+
+function fish_greeting
+    if status is-interactive; and type -q fastfetch
+        fastfetch
+    end
+end
